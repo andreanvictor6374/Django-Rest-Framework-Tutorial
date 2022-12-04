@@ -15,3 +15,7 @@ def validate_title_no_hello(value):
 
 
 unique_product_title = UniqueValidator(queryset=Product.objects.all())
+
+"""
+put validator on model as much as possible
+"""
