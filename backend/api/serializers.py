@@ -14,7 +14,7 @@ class UserProductInlineSerializer(serializers.Serializer):
 
 class UserPublicSerializer(serializers.Serializer):
     username = serializers.CharField(read_only=True)
-    this_is_not_real = serializers.CharField(read_only=True) # becasue this field is not related
+    this_is_not_real = serializers.CharField(read_only=True) # becasue this field is not related. this field doesn't exist
     id = serializers.IntegerField(read_only=True)
     # other_products = serializers.SerializerMethodField(read_only=True)
 
