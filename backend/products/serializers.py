@@ -18,7 +18,7 @@ class ProductInlineSerializer(serializers.Serializer):
 
 class ProductSerializer(serializers.ModelSerializer):
     owner = UserPublicSerializer(source='user', read_only=True) # source indicates field in Product
-    related_products = ProductInlineSerializer(source='user.product_set.all', read_only=True, many=True) # this is querysets all product related to users
+    related_products = ProductInlineSerializer(source='user.product_set.all', read_only=True, many=True) # this is querysets all product related to users (foreign key)
     my_user_data = serializers.SerializerMethodField(read_only=True)
     my_discount = serializers.SerializerMethodField(read_only=True)
     edit_url = serializers.SerializerMethodField(read_only=True)
