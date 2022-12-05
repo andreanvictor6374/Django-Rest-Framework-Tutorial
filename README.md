@@ -37,3 +37,4 @@ http://localhost:8000/api/search/?q=hello
 
 ### todo
 1. search without algolia fails
+2. find more about extend_schema()
