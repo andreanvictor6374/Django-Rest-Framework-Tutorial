@@ -7,6 +7,7 @@ Learn how to build REST APIs with Django &amp; the Django Rest Framework.
 ### to run javascript client
 ```shell
 python -m http.server 8111
+# access http://localhost:8111 instead
 ```
 access only allowed origin when accessing js client
 ```python
