@@ -19,11 +19,12 @@ if DEBUG:
 ```
 
 
-
 ### to run django backend
 ```shell
 python ./manage.py runserver
 
 ```
 
-### 
+### change path to SearchListOldView
+we don't use algolia
+backend/search/urls.py:5
