@@ -34,3 +34,6 @@ backend/search/urls.py:5
 ```shell
 http://localhost:8000/api/search/?q=hello
 ```
+
+### todo
+1. search without algolia fails
